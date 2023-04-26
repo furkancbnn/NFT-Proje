@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100&display=swap');
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -29,7 +27,6 @@ header{
     
     padding-bottom: 20px;
     padding-top: 50px; 
-
 }
 
 
@@ -85,8 +82,9 @@ header button{
 }
 
 .left-info{
-    margin-top: 50px;
+    margin-top: 70px;
     display: flex;
+    align-items: center;
     gap: 30px;
     cursor: pointer;
 }
@@ -150,6 +148,26 @@ header button{
 .categories:hover{
 
 }
+
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 170px;
+    cursor: pointer;
+}
+
+.social .box1, .box2, .box3, .box4, .box5{
+    transition: all 0.5s;
+}
+.social .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover{
+    transform: scale(1.5);
+    border: 3px double rgb(126, 59, 126);
+    padding: 12px;
+    border-radius: 50%;
+}
+
+
 
 .drops-sec .categories li{
     list-style: none;
