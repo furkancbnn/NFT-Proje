@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #00ABB3 #3C4048 #B2B2B2 #EAEAEA #18191c */
+
+body{
+    padding: 0 60px;
+    background-color: #18191c;
+    color: #EAEAEA;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: #18191c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 50px 0; */
+    
+    position: sticky;
+    top: 0;
+    
+    padding-bottom: 20px;
+    padding-top: 50px; 
+
+}
+
+
+nav{
+    display: flex;
+    gap: 40px;
+}
+
+nav a{
+    transition: all 0.4s;
+    cursor: pointer;
+
+}
+
+nav a:hover{
+    transition: all 0.4s;
+    color: rgb(244,18,240);
+    text-shadow: 2px 2px 30px rgb(244, 18, 240);
+}
+
+header button{
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 66px;
+    color: #EAEAEA;
+    background: linear-gradient(
+        225deg,
+        pink 0%,
+        purple 50%,
+        aqua 100%
+    );
+}
+
+/* Karşılama Alanı */
+.hero{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+/* Sol Taraf */
+.hero .left{
+    max-width: 700px;
+}
+
+.hero .left h1{
+    font-family: 'inter';
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.left-info{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.left-info div{
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(110deg, purple 30%, blue 100%);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.left-info div:hover{
+    background: linear-gradient(2500deg, purple 30%, blue 100%);
+}
+
+
+.left-info p{
+    max-width: 700px;
+}
+
+
+
+/* Sağ Taraf */
+.hero .right{
+    max-width: 700px;
+}
+
+.hero .right img{
+    width: 100%;
+}
+
+/* MARKALAR */
+.brands{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+    gap: 40px;
+    cursor: pointer;
+}
+
+
+/* DROPLAR */
+
+.drops-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.drops-sec h1{
+    font-size: 45px;
+    font-family: 'inter';
+}
+
+.drops-sec .categories{
+    display: flex;
+    gap: 50px;
+}
+.categories:hover{
+
+}
+
+.drops-sec .categories li{
+    list-style: none;
+    background: gray;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.drops-sec .categories li:hover{
+    transform: scale(1.2);
+    background: linear-gradient(110deg, purple 30%, blue 100%);
+}
+
+
+/* KARTLAR */
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1000px;
+}
+
+/* KART */
+.card{
+    width: 280px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: skewY(7deg);
+
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-info .price{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-info .price img{
+    width: 30px;
+}
+
+.card-info .price p{
+    color: #b721ff;
+    font-weight: bold;
+}
+
+.card-info small{
+
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-footer button{
+    background: linear-gradient(100deg, rgb(201, 75, 201) 10%, black 100%);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    
+    transition: all 0.5;
+    cursor: pointer;
+}
+
+.card-footer button:hover{
+    transition: all 0.5;
+    cursor: pointer;
+    background: linear-gradient(100deg, purple 10%, white 100%);
+    color: black;
+}
+
+
+/* REKLAMLAR */
+
+.big{
+    margin: 100px -120px;
+    letter-spacing: 30px;
+    transform: rotate(-6deg);
+    overflow: hidden;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    text-shadow: 2px 2px 20px white;
+    
+    background-color: rgb(11, 151, 182);
+    color: #EAEAEA;
+    
+    font-size: 116px;
+    font-weight: 600;
+    font-style: bolder;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+.adverts{
+    margin: 200px 0;
+}
+.adverts h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.info-adverts{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    transition: all 0.5s;
+}
+
+.info-advert{
+    box-shadow: 2px 2px 1px 3px rgb(155, 111, 155);
+    transform: rotate(10deg);
+}
+
+.info-advert{
+    background-color: rgb(27, 27, 109);
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    transition: all 0.5s;
+}
+
+.info-advert:hover{
+    transform: scale(1.1);
+    cursor: grabbing;
+}
+
+.info-advert img {
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 3px 2px 1px 2px white;
+}
+
+/* MOBİL UYUMLU (RESPONSİVE) YAPMA */
+/* 1300px den büyük cihazlar */
+@media(min-width: 1300px) {
+    .hero .left{
+        max-width: 900px;
+    }
+
+    .hero-info p{
+        max-width: 600px;
+    }
+}
+/*  1500 den küçük cihazlar */
+@media(max-width: 1500px){
+    .hero{
+        flex-direction: column;
+    }
+
+    .hero .left{
+        max-width: 900px;
+    }
+
+    .hero .right{
+        order: -3;
+    }
+}
+
